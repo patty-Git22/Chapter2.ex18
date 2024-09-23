@@ -22,11 +22,14 @@ using namespace std;
 
 int main()
 {
-	int Customers = 16500;
-	int BuyEnergyDrinks = Customers * .15;
-	int Citrus = BuyEnergyDrinks * .58;
-	cout << "Out of a 16,500 customer survey preformed by a energy drink company," << endl;
+	int Customers;
+	int BuyEnergyDrinks;
+	int Citrus;
+	cout << "How many customers were surveyed? " << endl;
+	cin >> Customers;
+	BuyEnergyDrinks = Customers * 0.15;
 	cout << "approximately " << BuyEnergyDrinks << " customers in the survey purchase one or more energy drinks per week.\n\n";
+	Citrus = BuyEnergyDrinks * 0.58;
 	cout << "Of those who purchased one or more energy drinks per week, \napproximately " << Citrus << " prefered citrus flavored energy drinks." << endl;
 
 	return 0;
